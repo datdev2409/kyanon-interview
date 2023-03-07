@@ -1,8 +1,15 @@
-# Getting Started with Create React App
+# Login and update form
+This project is the assessment test of Kyanon company. The test required to build functional login and update form.
+
+I use ReactJS in client side and Firebase as a backend to implement it. 
+
+You can find a live demo [here](https://kyanon-intern.web.app) and the authentication flow diagram [here](https://ibb.co/4Zy9vHC). Or if you want to run on your local machine, follows the instruction below.
+
+## Installation
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import FormGroup from '../components/FormGroup';
 import Button from '../components/Button';
 import { signIn } from '../firebase/auth';
@@ -9,6 +9,13 @@ function LoginPage() {
   const [error, setError] = useState(null);
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const auth_token = localStorage.getItem("auth_token")
+    if (auth_token) {
+      redirect("/") 
+    }
+  }, [])
 
   function handleSubmit(e) {
     e.preventDefault();
