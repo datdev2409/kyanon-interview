@@ -3,7 +3,9 @@ This project is the assessment test of Kyanon company. The test required to buil
 
 I use ReactJS in client side and Firebase as a backend to implement it. 
 
-You can find a live demo [here](https://kyanon-intern.web.app) and the authentication flow diagram [here](https://ibb.co/4Zy9vHC). Or if you want to run on your local machine, follows the instruction below.
+You can find a live demo [here](https://kyanon-intern.web.app) and the authentication flow diagram [here](https://ibb.co/4Zy9vHC). In live demo, I have already create an account (email: intern@kyanon.com, password: 12345678), use it to login and explore my application.
+
+Or if you want to run on your local machine, follows the instruction below.
 
 ## Installation
 
