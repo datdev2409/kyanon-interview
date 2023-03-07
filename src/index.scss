@@ -1,0 +1,147 @@
+$primary-color: #3306E4;
+$text-color: #1C1C1C;
+$red-color: #dc3545;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // default 16px -> font-size: 62.5% -> 1rem = 10px
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+  background-color: whitesmoke;
+  font-size: 1.3rem;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 450px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+
+  padding-top: 100px;
+}
+
+.form {
+  &-title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  &-label {
+    display: block;
+    color: $primary-color;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+
+    &--secondary {
+      color: $text-color;
+    }
+  }
+
+  &-input {
+    width: 100%;
+    display: block;
+    padding: 12px 12px;
+    border-radius: 6px;
+    border: 2px solid grey;
+
+    &--error {
+      color: $red-color;
+      outline: $red-color;
+      border: 2px solid $red-color;
+    }
+
+  }
+
+  &-error {
+    color: $red-color;
+  }
+
+  &-checkbox {
+    width: 2rem;
+    height: 2rem;
+    accent-color: $primary-color;
+  }
+
+  &-group {
+    margin-top: 2rem; 
+
+    &-horizontal {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.btn {
+  padding: 1rem 3.5rem;
+
+  border: none;
+  border-radius: 1rem;
+
+  &--primary {
+    color: whitesmoke;
+    background-color: $primary-color;
+  }
+
+  &--secondary {
+    color: $primary-color;
+    background-color: lighten($primary-color, 55%);
+    font-weight: bold;
+  }
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+  }
+}
+
+.passwordHidden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle-btn {
+  accent-color: #3306E4;
+  width: 18px;
+  height: 18px;
+}
+
+.flex {
+  display: flex;
+
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-g-1 {
+    gap: 1rem;
+  }
+}
+
+.fw {
+  &-medium {
+    font-weight: 500;
+  }
+}
