@@ -1,4 +1,5 @@
 $primary-color: #3306E4;
+$light-purple: #F6F4FF;
 $text-color: #1C1C1C;
 $red-color: #dc3545;
 
@@ -40,6 +41,7 @@ body {
     font-weight: 500;
     text-align: center;
     font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   &-label {
@@ -72,6 +74,10 @@ body {
 
   &-error {
     color: $red-color;
+    background-color: lighten($red-color, 40%);
+    padding: 12px 12px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
   }
 
   &-checkbox {
@@ -81,7 +87,7 @@ body {
   }
 
   &-group {
-    margin-top: 2rem; 
+    margin-bottom: 2rem; 
 
     &-horizontal {
       display: flex;
@@ -104,8 +110,13 @@ body {
 
   &--secondary {
     color: $primary-color;
-    background-color: lighten($primary-color, 55%);
+    background-color: $light-purple;
     font-weight: bold;
+  }
+
+  &--disabled {
+    background-color: grey;
+    cursor: default;
   }
 
   &:hover {
@@ -135,6 +146,10 @@ body {
     align-items: center;
   }
 
+  &-right {
+    justify-content: end;
+  }
+
   &-g-1 {
     gap: 1rem;
   }
@@ -144,4 +159,8 @@ body {
   &-medium {
     font-weight: 500;
   }
+}
+
+.highlight {
+  color: $primary-color;
 }
